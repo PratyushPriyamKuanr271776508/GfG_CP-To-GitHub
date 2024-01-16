@@ -75,7 +75,7 @@ const createRepository = (accessToken, repositoryName) => {
     name,
     private: true,
     auto_init: true,
-    description: 'This repository serves as a collection of my solutions to various GeeksforGeeks Data Structures and Algorithms (DSA) problems, organized by the level of difficulty. - Created using [GfG To GitHub](https://github.com/AtharvaNanavate/GfG-To-GitHub)',
+    description: 'This repository serves as a collection of my solutions to various GeeksforGeeks Data Structures and Algorithms (DSA) problems, organized by the level of difficulty. - Created using [GfG To GitHub](https://github.com/PratyushPriyamKuanr271776508/GfG_CP-To-GitHub)',
   };
   repositoryInit = JSON.stringify(repositoryInit);
 
@@ -100,7 +100,7 @@ const linkRepoStatusCode = (statusCode, repositoryName) => {
       $('#unlinkRepository').hide();
       $('#error_info').attr("style","display: block; line-height: 1;");
       $('#error_info').html(
-        `Error linking <a target="blank" href="${`https://github.com/${repositoryName}`}">${repositoryName}</a> to 'GfG To GitHub'. <br> This repository has been moved permenantly. Try creating a new one.`,
+        `Error linking <a target="blank" href="${`https://github.com/${repositoryName}`}">${repositoryName}</a> to 'GfG_CP To GitHub'. <br> This repository has been moved permenantly. Try creating a new one.`,
       );
       $('#error_info').show();
       break;
@@ -110,7 +110,7 @@ const linkRepoStatusCode = (statusCode, repositoryName) => {
       $('#unlinkRepository').hide();
       $('#error_info').attr("style","display: block; line-height: 1;");
       $('#error_info').html(
-        `Error linking <a target="blank" href="${`https://github.com/${repositoryName}`}">${repositoryName}</a> to 'GfG To GitHub'. <br> Forbidden action. Please make sure you have the right access to this repository.`,
+        `Error linking <a target="blank" href="${`https://github.com/${repositoryName}`}">${repositoryName}</a> to 'GfG_CP To GitHub'. <br> Forbidden action. Please make sure you have the right access to this repository.`,
       );
       $('#error_info').show();
       break;

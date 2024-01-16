@@ -197,7 +197,7 @@ const loader = setInterval(() => {
   let solutionLanguage = null;
   let solution = null;
 
-  if (window.location.href.includes('www.geeksforgeeks.org/problems',) || window.location.href.includes('practice.geeksforgeeks.org/problems',)) {
+  if (window.location.href.includes('www.geeksforgeeks.org/problems',) || window.location.href.includes('practice.geeksforgeeks.org/problems',) || window.location.href.includes('www.geeksforgeeks.org/batch/competitive-programming',)) {
 
     const gfgSubmitButton = document.querySelector('[class^="ui button problems_submit_button"]');
 
@@ -240,7 +240,7 @@ const loader = setInterval(() => {
                     btoa(unescape(encodeURIComponent(problemStatement))),
                     probName,
                     'README.md',
-                    "Create README - GfG to GitHub",
+                    "Create README - GfG_CP to GitHub",
                     problemDifficulty,
                   );
                 }
@@ -257,7 +257,7 @@ const loader = setInterval(() => {
                         btoa(unescape(encodeURIComponent(solution))),
                         probName,
                         convertToKebabCase(problemTitle + solutionLanguage),
-                        "Added Solution - GfG to GitHub",
+                        "Added Solution - GfG_CP to GitHub",
                         problemDifficulty,
                       );
                     }
@@ -266,7 +266,7 @@ const loader = setInterval(() => {
                         btoa(unescape(encodeURIComponent(solution))),
                         probName,
                         convertToKebabCase(problemTitle + solutionLanguage),
-                        "Updated Solution - GfG to GitHub",
+                        "Updated Solution - GfG_CP to GitHub",
                         problemDifficulty,
                       );
                     }
